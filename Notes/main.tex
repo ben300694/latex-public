@@ -1,0 +1,100 @@
+\documentclass[a4paper]{article}
+
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\usepackage{hyperref, url}
+
+\usepackage{enumerate}
+
+\usepackage{geometry}
+\geometry{a4paper, left=2.5cm, right=2cm, top=2cm, bottom=3cm}
+
+\usepackage{amsmath, amssymb, amsfonts, amsthm, mathtools}
+\usepackage{faktor}
+\usepackage{dsfont}
+\usepackage[justification=centering]{caption}
+
+\usepackage{tikz-cd}
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{babel}
+
+\usepackage{imakeidx}
+\makeindex[columns=2]
+
+%% Environment definitions
+
+\newtheorem{theorem}{Theorem}[section]
+
+\newtheorem{proposition}[theorem]{Proposition}
+
+\newtheorem{lemma}[theorem]{Lemma}
+
+\newtheorem{corollary}[theorem]{Corollary}
+
+\newtheorem{fact}[theorem]{Fact}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newtheorem*{openquestion*}{Open question}
+
+\newtheorem*{conjecture*}{Conjecture}
+
+%% Math operators
+
+\DeclareMathOperator{\im}{im}
+\DeclareMathOperator{\mat}{Mat}
+\DeclareMathOperator{\rg}{rg}
+\DeclareMathOperator{\id}{id}
+\DeclareMathOperator{\gl}{Gl}
+\DeclareMathOperator{\spl}{Sl}
+\DeclareMathOperator{\cyl}{Cyl}
+\DeclareMathOperator{\cone}{Cone}
+
+% Macro definitions
+
+\newcommand{\sphere}[1]{\mathbb{S}^{#1}}
+\newcommand{\disk}[1]{\mathbb{D}^{#1}}
+\newcommand{\interval}{\mathbb{I}}
+\newcommand{\RP}[1]{\mathbb{RP}^{#1}}
+\newcommand{\CP}[1]{\mathbb{CP}^{#1}}
+
+% \H is already defined
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\begin{document}
+
+\section{Definitions}
+
+\begin{definition}
+	$L$ oriented link with Seifert matrix $A$, then the first homology of
+	the infinite cyclic covering of the link complement, $H_1(X_{\infty} ; \Z)$,
+	has square presentation matrix $t A - A^{T}$.
+	
+	The \textit{Alexander polynomial}\index{Alexander!polynomial} of $L$ is given by
+	\begin{equation*}
+		\Delta_{L}(t) \doteq \det(t A - A^{T})
+	\end{equation*}
+	where $\doteq$ means ``up to a multiplication with a unit $\{ \pm t^{n} \}$
+	of the Laurent ring $\Z[t, t^{-1}]$''.
+\end{definition}
+
+\begin{remark}
+	$\Z[t^{\pm 1}]$ is \textbf{not} a PID.
+\end{remark}
+	
+
+\bibliography{mybib}{}
+\bibliographystyle{alpha}
+
+\printindex
+
+\end{document}
