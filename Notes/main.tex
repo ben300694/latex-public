@@ -42,6 +42,7 @@
 \theoremstyle{remark}
 \newtheorem{remark}[theorem]{Remark}
 
+\newtheorem{openquestion}{Open question}
 \newtheorem*{openquestion*}{Open question}
 
 \newtheorem*{conjecture*}{Conjecture}
@@ -72,7 +73,11 @@
 
 \begin{document}
 
+\section{Knot Theory}
+
 \section{Definitions}
+
+\subsection{Alexander polynomial}
 
 \begin{definition}
 	$L$ oriented link with Seifert matrix $A$, then the first homology of
@@ -83,14 +88,34 @@
 	\begin{equation*}
 		\Delta_{L}(t) \doteq \det(t A - A^{T})
 	\end{equation*}
-	where $\doteq$ means ``up to a multiplication with a unit $\{ \pm t^{n} \}$
+	where $\doteq$ means ``up to a multiplication with a unit $\{ \pm t^{\pm n} \}$
 	of the Laurent ring $\Z[t, t^{-1}]$''.
 \end{definition}
 
 \begin{remark}
 	$\Z[t^{\pm 1}]$ is \textbf{not} a PID.
 \end{remark}
+
+
+\subsection{Invariants}
+
+\begin{definition}
+	The tunnel number $t(K)$ of a knot $K \subset \sphere{3}$ is the minimal number of arcs
+	that must be added to the knot (forming a graph with three edges at a vertex) so that
+	its complement in $\sphere{3}$ is a handlebody. \\
+	The boundary will be a minimal Heegaard splitting of the knot complement (??).
+\end{definition}
+
+
+
+\section{Open questions}
+
+\begin{openquestion}
+	Is the crossing number of a satellite knot bigger than that of its companion?
+\end{openquestion}
 	
+
+\section{4-manifolds}
 
 \bibliography{mybib}{}
 \bibliographystyle{alpha}
