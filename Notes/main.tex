@@ -1,6 +1,6 @@
-\documentclass[a4paper]{article}
+\documentclass[a4paper]{book}
 
-\usepackage[ngerman]{babel}
+\usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
@@ -57,6 +57,7 @@
 \DeclareMathOperator{\spl}{Sl}
 \DeclareMathOperator{\cyl}{Cyl}
 \DeclareMathOperator{\cone}{Cone}
+\DeclareMathOperator{\rel}{rel}
 
 % Macro definitions
 
@@ -73,7 +74,34 @@
 
 \begin{document}
 
-\section{Knot Theory}
+% % % % % % % % % % % % % % % % % % % % % % % % %
+\chapter{Homotopy theory}
+
+\section{CW-complexes}
+
+\begin{definition}
+	A map $f \colon X \rightarrow Y$ is called a
+	\textit{weak homotopy equivalence} \index{homotopy equivalence!weak}
+	if it induces isomorphisms
+	\[
+		\pi_n(X, x_0) \rightarrow \pi_n(Y, f(x_0))
+	\]
+	for all $n \ge 0$ and all choices of basepoints $x_0$ in $X$.
+\end{definition}
+
+\begin{theorem}[Whitehead's Theorem]
+	A weak homotopy equivalence between CW-complexes is a homotopy equivalence.
+\end{theorem}
+
+\begin{proposition}[Geometric interpretation of $n$-connectedness, {\cite[Proposition 4.15]{hatcher2002algebraic}}]
+	If $(X, A)$ is an $n$-connected CW-pair, then there exists
+	a CW-pair $(Z, A) \sim_{\rel A} (X, A)$
+	such that all cells of $Z \setminus A$ have dimension greater than $n$.
+\end{proposition}
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % %
+\chapter{Knot Theory}
 
 \section{Definitions}
 
@@ -114,8 +142,8 @@
 	Is the crossing number of a satellite knot bigger than that of its companion?
 \end{openquestion}
 	
-
-\section{4-manifolds}
+% % % % % % % % % % % % % % % % % % % % % % % % %
+\chapter{4-manifolds}
 
 \bibliography{mybib}{}
 \bibliographystyle{alpha}
