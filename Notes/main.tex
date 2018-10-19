@@ -42,6 +42,9 @@
 \theoremstyle{remark}
 \newtheorem{remark}[theorem]{Remark}
 
+\theoremstyle{example}
+\newtheorem{example}[theorem]{Example}
+
 \newtheorem{openquestion}{Open question}
 \newtheorem*{openquestion*}{Open question}
 
@@ -130,11 +133,27 @@
 \begin{definition}
 	The tunnel number $t(K)$ of a knot $K \subset \sphere{3}$ is the minimal number of arcs
 	that must be added to the knot (forming a graph with three edges at a vertex) so that
-	its complement in $\sphere{3}$ is a handlebody. \\
-	The boundary will be a minimal Heegaard splitting of the knot complement (??).
+	its complement in $\sphere{3}$ is a handlebody. The same definition is
+	valid for links. \\
+	The boundary will be a minimal Heegaard splitting of the knot complement
+	(The knot complement is a manifold with boundary, so what is the definition
+	of a Heegard splitting in that case?).
 \end{definition}
 
+\begin{remark}
+	Every link has a tunnel number, this can be seen by adding a ``vertical''
+	tunnel at every crossing in a link diagram.
+	This shows that the tunnel number of a knot is always less than or equal
+	to the crossing number, $t(K) \le c(K)$.
+\end{remark}
 
+\begin{example}
+	\begin{itemize}
+		\item The unknot is the only knot with tunnel number 0. (Why?)
+		\item The trefoil knot has tunnel number 1.
+		\item The figure eight knot has tunnel number 1.
+	\end{itemize}
+\end{example}
 
 \section{Open questions}
 
