@@ -79,6 +79,7 @@
 
 % % % % % % % % % % % % % % % % % % % % % % % % %
 \chapter{Homotopy theory}
+% % % % % % % % % % % % % % % % % % % % % % % % %
 
 \section{CW-complexes}
 
@@ -119,8 +120,29 @@
 
 % % % % % % % % % % % % % % % % % % % % % % % % %
 \chapter{Knot Theory}
+% % % % % % % % % % % % % % % % % % % % % % % % %
 
 \section{Definitions}
+
+\begin{definition}
+	If $K$ is an oriented knot, then
+	\begin{itemize}
+		\item the \textit{reverse}\index{knot!reverse} $\overline{K}$
+		is $K$ with the opposite orientation
+		
+		\item the \textit{obverse}\index{knot!obverse} $rK$ is
+		the reflection of $K$ in a plane
+		
+		\item the \textit{inverse}\index{knot!inverse} $r \overline{K}$
+		is the concordance inverse of $K$.
+	\end{itemize}
+\end{definition}
+
+\begin{proposition}
+	For $K \subset \sphere{3}$ we have that
+	$K \# r \overline{K}$ is slice, even ribbon.
+\end{proposition}
+
 
 \subsection{Alexander polynomial}
 
@@ -177,6 +199,7 @@
 	
 % % % % % % % % % % % % % % % % % % % % % % % % %
 \chapter{4-manifolds}
+% % % % % % % % % % % % % % % % % % % % % % % % %
 
 \bibliography{mybib}{}
 \bibliographystyle{alpha}
