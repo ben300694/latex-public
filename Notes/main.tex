@@ -63,9 +63,9 @@
 %	BOOK META-INFORMATION
 %----------------------------------------------------------------------------------------
 
-\title{Book Title} % Title of the book
+\title{Notes} % Title of the book
 
-\author{John Smith} % Author
+\author{Benjamin Matthias Ruppik} % Author
 
 \publisher{Publisher Name} % Publisher
 
@@ -76,7 +76,7 @@
 \usepackage{amsmath, amssymb, amsfonts, amsthm, mathtools}
 \usepackage{faktor}
 \usepackage{dsfont}
-\usepackage[justification=centering]{caption}
+% \usepackage[justification=centering]{caption}
 
 \usepackage{tikz-cd}
 \usetikzlibrary{decorations.markings}
@@ -87,24 +87,23 @@
 
 %% Environment definitions
 
-\newtheorem{theorem}{Theorem}[section]
+\newtheorem{theorem}{Theorem}
 
-\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{proposition}{Proposition}
 
-\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{lemma}{Lemma}
 
-\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{corollary}{Corollary}
 
-\newtheorem{fact}[theorem]{Fact}
+\newtheorem{fact}{Fact}
 
 \theoremstyle{definition}
-\newtheorem{definition}[theorem]{Definition}
+\newtheorem{definition}{Definition}
 
 \theoremstyle{remark}
-\newtheorem{remark}[theorem]{Remark}
+\newtheorem{remark}{Remark}
 
-\theoremstyle{example}
-\newtheorem{example}[theorem]{Example}
+\newtheorem{example}{Example}
 
 \newtheorem{openquestion}{Open question}
 \newtheorem*{openquestion*}{Open question}
@@ -122,6 +121,8 @@
 \DeclareMathOperator{\cyl}{Cyl}
 \DeclareMathOperator{\cone}{Cone}
 \DeclareMathOperator{\rel}{rel}
+
+\DeclareMathOperator{\Arf}{Arf}
 
 % Macro definitions
 
@@ -205,7 +206,7 @@
 \begin{example}
 	Removing a point from a homology sphere yields an acyclic space.
 	This example for the Poincare homology sphere is described in
-	% \cite[Example 2.38]{hatcher2002algebraic}
+	Example 2.38 \cite{hatcher2002algebraic}.
 	TODO Insert proof. %TODO
 \end{example}
 
@@ -283,6 +284,31 @@
 	\end{itemize}
 \end{example}
 
+\subsection{Arf invariant}
+
+\begin{theorem}
+	The Arf invariant of a knot $K$ is related to the Alexander polynomial by
+	\begin{equation*}
+		\Arf(K) =
+		\begin{cases}
+			0 & \textrm{if } \Delta_{K}(-1) \equiv \pm 1 \textrm{ modulo } 8 \\
+			1 & \textrm{if } \Delta_{K}(-1) \equiv \pm 3 \textrm{ modulo } 8.
+		\end{cases}
+	\end{equation*}
+\end{theorem}
+
+\begin{remark}
+	If $K$ is a slice knot, we know that its determinant
+	$| \Delta_{K}(-1) |$ is an odd square integer.
+	Thus we have $\Delta_{K}(-1) \equiv \pm 1 \textrm{ modulo } 8$
+	\marginnote{$(2k+1)^{2} = 4 k^{2} + 4 k + 1 = 4 \underbrace{k (k+1)}_{\text{even}} + 1
+		\equiv 1 \textrm{ modulo } 8$}
+	and as such $\Arf(K) = 0$; $\Arf$ is a well defined concordance invariant.
+\end{remark}
+
+
+
+
 \section{Open questions}
 
 \begin{openquestion}
@@ -304,7 +330,7 @@ TODO
 %----------------------------------------------------------------------------------------
 
 \bibliography{mybib} % Use the mybib.bib file for the bibliography
-\bibliographystyle{plainnat} % Use the plainnat style of referencing
+\bibliographystyle{alpha} % Use the plainnat style of referencing
 
 %----------------------------------------------------------------------------------------
 
