@@ -250,17 +250,36 @@
 	\end{equation*}
 	where $\doteq$ means ``up to a multiplication with a unit $\{ \pm t^{\pm n} \}$
 	of the Laurent ring $\Z[t, t^{-1}]$''.
+	\marginnote{
+		\begin{remark}
+			$\Z[t^{\pm 1}]$ is \textbf{not} a PID.
+		\end{remark}
+	}
 \end{definition}
 
-\begin{remark}
-	$\Z[t^{\pm 1}]$ is \textbf{not} a PID.
-\end{remark}
+\begin{definition}[Surgery on a knot in $\sphere{3}$]
+	The notation $\sphere{3}_{0}(K)$ denotes the $0$-surgery on a knot
+	$K \subset \sphere{3}$, i.e. removing a tubular neighborhood
+	$\sphere{1} \times \disk{2}$ of $K$ and gluing in $\disk{2} \times \sphere{1}$
+	via a homeomorphism of the boundaries, which are both $\sphere{1} \times \sphere{1}$.
+	TODO %TODO
+\end{definition}
+
+\begin{definition}[Trace of a knot]
+	For $n \in \Z$ the $n$-trace of a knot \index{knot!trace}
+	$K \subset \sphere{3}$
+	is the $4$-manifold $X_{n}(K)$ obtained by attaching an $n$-framed $2$-handle to the $4$-ball along $K$,
+	i.e. \marginnote{A Kirby diagram for $X_{n}(K)$ is given just by the knot $K$ with the framing $n$ written next to it.}
+	\begin{equation*}
+		X_{n}(K) = \disk{4} \cup_{K \times \textrm{framing} \colon \sphere{1} \times \disk{2} \hookrightarrow \sphere{3}} (\disk{2} \times \disk{2}).
+	\end{equation*}
+\end{definition}
 
 
 \subsection{Invariants}
 
 \begin{definition}
-	The tunnel number $t(K)$ of a knot $K \subset \sphere{3}$ is the minimal number of arcs
+	The \textit{tunnel number}\index{knot!tunnel number} $t(K)$ of a knot $K \subset \sphere{3}$ is the minimal number of arcs
 	that must be added to the knot (forming a graph with three edges at a vertex) so that
 	its complement in $\sphere{3}$ is a handlebody. The same definition is
 	valid for links. \\
