@@ -303,6 +303,8 @@
 	\end{itemize}
 \end{example}
 
+
+
 \subsection{Arf invariant}
 
 \begin{theorem}
@@ -325,8 +327,38 @@
 	and as such $\Arf(K) = 0$; $\Arf$ is a well defined concordance invariant.
 \end{remark}
 
+\section{Concordance}
+
+\begin{definition}
+	A \textit{smooth link cobordism} \index{link!cobordism} between the links
+	$L_0, L_1 \subset \sphere{3}$
+	is a smooth, compact, oriented surface
+	$\Sigma$ generically embedded in $\sphere{3} \times \interval$ such that
+	$\partial \Sigma = \overline{L_{0}} \coprod L_{1}$,
+	where $\partial \Sigma \subset \sphere{3} \times \{0, 1\}$.
+\end{definition}
+
+\begin{proposition}
+	Linking numbers are concordance invariants.
+\end{proposition}
+
+\begin{remark}[The Hopf link is ``the most non-slice link'']
+	\cite{krushkal2015slicing}
+	Any link in $\sphere{3}$ bounds immersed smooth disks
+	$\coprod^{n} \disk{2} \looparrowright \disk{4}$.
+	%TODO
+	TODO
+\end{remark}
 
 
+\section{TQFTs - Topological Quantum Field Theories}
+
+%TODO
+TODO Write down axioms
+
+\marginnote{A monoidal functor is supposed to preserve the identity
+objects for the tensor product. Since the empty set is the identity for the tensor product in the bordism category (given by disjoint union of the bordisms), the TQFT should send this to the identity object for
+$\otimes_{R}$, which is just the ground ring $R$.}
 
 \section{Open questions}
 
