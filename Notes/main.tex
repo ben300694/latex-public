@@ -215,7 +215,7 @@
 \chapter{Knot Theory}
 % % % % % % % % % % % % % % % % % % % % % % % % %
 
-\section{Definitions}
+\section{Constructions \& Definitions}
 
 \begin{definition}
 	If $K$ is an oriented knot, then
@@ -236,6 +236,7 @@
 	$K \# r \overline{K}$ is slice, even ribbon.
 \end{proposition}
 
+\section{Invariants}
 
 \subsection{Alexander polynomial}
 
@@ -258,7 +259,8 @@
 \end{definition}
 
 \begin{definition}[Surgery on a knot in $\sphere{3}$]
-	The notation $\sphere{3}_{0}(K)$ denotes the $0$-surgery on a knot
+	The notation $\sphere{3}_{0}(K)$ denotes the \textit{$0$-surgery on a knot}
+	\index{knot!surgery on}
 	$K \subset \sphere{3}$, i.e. removing a tubular neighborhood
 	$\sphere{1} \times \disk{2}$ of $K$ and gluing in $\disk{2} \times \sphere{1}$
 	via a homeomorphism of the boundaries, which are both $\sphere{1} \times \sphere{1}$.
@@ -266,17 +268,36 @@
 \end{definition}
 
 \begin{definition}[Trace of a knot]
-	For $n \in \Z$ the $n$-trace of a knot \index{knot!trace}
+	\marginnote{A Kirby diagram for $X_{n}(K)$ is given just by the knot $K$ with the framing $n$ written next to it.}
+	For $n \in \Z$ the \textit{$n$-trace of a knot} \index{knot!trace}
 	$K \subset \sphere{3}$
 	is the $4$-manifold $X_{n}(K)$ obtained by attaching an $n$-framed $2$-handle to the $4$-ball along $K$,
-	i.e. \marginnote{A Kirby diagram for $X_{n}(K)$ is given just by the knot $K$ with the framing $n$ written next to it.}
+	i.e. 
 	\begin{equation*}
 		X_{n}(K) = \disk{4} \cup_{K \times \textrm{framing} \colon \sphere{1} \times \disk{2} \hookrightarrow \sphere{3}} (\disk{2} \times \disk{2}).
 	\end{equation*}
 \end{definition}
 
+\begin{marginfigure}
+	\begin{center}
+	\includegraphics[width=0.5\linewidth]{./pictures/right_handed_trefoil_+1_surgery.pdf}
+	\end{center}
+	\caption{A Kirby diagram representing the $1$-trace
+		$X_1(\textrm{right handed trefoil})$.
+		The boundary of this $4$-manifold is the $+1$-surgery
+		$\sphere{3}_{+1}(\textrm{right handed trefoil})$,
+		a possible description of the Poincare homology sphere.}
+	\label{fig:right_handed_trefoil_+1_surgery}
+\end{marginfigure}
 
-\subsection{Invariants}
+\begin{theorem}
+	\begin{itemize}
+		\item $K$ is smoothly slice if and only if $X_{0}(K)$ smoothly embeds in $\sphere{4}$.
+		\item Similarly, $K$ is topologically slice if and only if $X_{0}(K)$ topologically
+		embeds in $\sphere{4}$.
+	\end{itemize}
+\end{theorem}
+
 
 \begin{definition}
 	The \textit{tunnel number}\index{knot!tunnel number} $t(K)$ of a knot $K \subset \sphere{3}$ is the minimal number of arcs
@@ -365,6 +386,10 @@ $\otimes_{R}$, which is just the ground ring $R$.}
 \begin{openquestion}
 	Is the crossing number of a satellite knot bigger than that of its companion?
 \end{openquestion}
+
+
+
+
 
 % % % % % % % % % % % % % % % % % % % % % % % % %
 \chapter{4-manifolds}
