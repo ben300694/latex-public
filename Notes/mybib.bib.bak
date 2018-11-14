@@ -38,13 +38,12 @@
   Publisher                = {Mathematical Sciences Publishers}
 }
 
-@InCollection{rolfsen2010tutorial,
-  Title                    = {Tutorial on the braid groups},
+@Book{rolfsen2003knots,
+  Title                    = {Knots and links},
   Author                   = {Rolfsen, Dale},
-  Booktitle                = {Braids: Introductory Lectures on Braids, Configurations and Their Applications},
-  Publisher                = {World Scientific},
-  Year                     = {2010},
-  Pages                    = {1--30}
+  Publisher                = {American Mathematical Soc.},
+  Year                     = {2003},
+  Volume                   = {346}
 }
 
 @Book{rolfsen2003knots,
