@@ -385,7 +385,6 @@
 \end{definition}
 
 \begin{definition}[Trace of a knot]
-	\marginnote{A Kirby diagram for $X_{n}(K)$ is given just by the knot $K$ with the framing $n$ written next to it.}
 	For $n \in \Z$ the \textit{$n$-trace of a knot} \index{knot!trace}
 	$K \subset \sphere{3}$
 	is the $4$-manifold $X_{n}(K)$ obtained by attaching an $n$-framed $2$-handle to the $4$-ball along $K$,
@@ -393,19 +392,21 @@
 	\begin{equation*}
 	X_{n}(K) = \disk{4} \cup_{K \times \textrm{framing} \colon \sphere{1} \times \disk{2} \hookrightarrow \sphere{3}} (\disk{2} \times \disk{2}).
 	\end{equation*}
+	
+	\begin{marginfigure}
+		\begin{center}
+			\includegraphics[width=0.5\linewidth]{./pictures/right_handed_trefoil_+1_surgery.pdf}
+		\end{center}
+		\caption{
+			A Kirby diagram for $X_{n}(K)$ is given just by the knot $K$ with the framing $n$ written next to it.
+			For example, here is a Kirby diagram representing the $1$-trace
+			$X_1(\textrm{right handed trefoil})$.
+			The boundary of this $4$-manifold is the $+1$-surgery
+			$\sphere{3}_{+1}(\textrm{right handed trefoil})$,
+			a possible description of the Poincar\'e homology sphere.}
+		\label{fig:right_handed_trefoil_+1_surgery}
+	\end{marginfigure}
 \end{definition}
-
-\begin{marginfigure}
-	\begin{center}
-		\includegraphics[width=0.5\linewidth]{./pictures/right_handed_trefoil_+1_surgery.pdf}
-	\end{center}
-	\caption{A Kirby diagram representing the $1$-trace
-		$X_1(\textrm{right handed trefoil})$.
-		The boundary of this $4$-manifold is the $+1$-surgery
-		$\sphere{3}_{+1}(\textrm{right handed trefoil})$,
-		a possible description of the Poincar\'e homology sphere.}
-	\label{fig:right_handed_trefoil_+1_surgery}
-\end{marginfigure}
 
 \begin{theorem}[{\citep[Thm. 1.8]{miller2018knot}}]
 	\begin{itemize}
