@@ -296,6 +296,32 @@
 \end{proposition}
 	
 
+\begin{definition}
+	The lower central series of a group $G$ is defined inductively
+	by \marginnote{Observe that $[G, G_{i-1}] = [G_{i-1}, G]$.}
+	\begin{align*}
+		G_{0} & \coloneqq G \\
+		G_{i} & \coloneqq [G, G_{i-1}] = \langle [g, h] \mid g \in G, h \in G_{i-1} \rangle
+	\end{align*}
+\end{definition}
+
+\begin{proposition}
+	This satisfies:
+	\begin{itemize}
+		\item $G_0 \supseteq G_1 \supseteq G_2 \supseteq \ldots$
+		\item each $G_{i}$ is normal in $G$
+		\item the quotient $G_{i} / G_{i+1}$ is in the center of $G / G_{i+1}$.
+	\end{itemize}
+\end{proposition}
+
+\begin{lemma}
+	\marginnote{Heuristic idea: The length of nonempty words
+		in $G_{i}$ increases with $i$, and so only the identity
+		(which is the empty word in a free group)
+		survives in all steps.}
+	If $F$ is a free group, then $\bigcap_{i=1}^{\infty} F_{i}$ is the
+	trivial group.
+\end{lemma}
 
 \section{Invariants}
 
