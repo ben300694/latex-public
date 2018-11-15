@@ -245,6 +245,58 @@
 	$K \# r \overline{K}$ is slice, even ribbon.
 \end{proposition}
 
+
+\begin{definition}[Homotopically unlinked,
+		{\citep[3.F.9.]{rolfsen2003knots}}]
+	If $L = L_{1} \cup \ldots \cup L_{n}$ is a link with $n$
+	components, we say that $L_i$ is
+	\textit{homotopically unlinked} \index{homotopically unlinked}
+	from the remaining components if there is
+	a homotopy $h_{t}$ from the embedding of $L_{i}$ to the constant
+	map such that the images of $h_{t}$ and $L_{j}$ are disjoint
+	at all times $t \in \interval$ and for all other components $j \ne i$.
+\end{definition}
+
+\begin{example}
+	In the Whitehead link both components are
+	homotopically unlinked from each other.
+\end{example}
+
+\begin{remark}
+	Homotopic linking (for two component links)
+	is \textbf{not} a symmetric relation.
+	\begin{marginfigure}
+		\begin{center}
+			\includegraphics[width=0.5\linewidth]{./pictures/positive_whitehead_link.pdf}
+		\end{center}
+		\caption{Positive Whitehead link,
+			picture from \citep{meier2015distinguishing}.}
+		\label{fig:positive_whitehead_link}
+	\end{marginfigure}
+\end{remark}
+
+\begin{definition}
+	A link $L = L_{1} \cup L_{2}$ of two components in $\R^{n}$
+	is \textit{splittable} \index{link!splittable}
+	if there are disjoint, topological $n$-balls $\disk{n}_{1}, \disk{n}_{2} \subset \R^{n}$
+	such that $L_{i}$ lies in the interior of $\disk{n}_{i}$.
+\end{definition}
+
+\begin{proposition}
+	\marginnote{
+		The converse of
+		\ref{prop:splittable_implies_homotopically_unlinked}
+		is not true, an example
+		of van Kampen and Zeeman is discussed
+		in {\citep[3.K.5.]{rolfsen2003knots}}.
+	}
+	\label{prop:splittable_implies_homotopically_unlinked}
+	If a link is splittable, then each component is homotopically
+	unlinked from the other.
+\end{proposition}
+	
+
+
 \section{Invariants}
 
 \subsection{Alexander polynomial}
@@ -277,7 +329,7 @@
 	valid for links. \\
 	The boundary will be a minimal Heegaard splitting of the knot complement
 	(The knot complement is a manifold with boundary, so what is the definition
-	of a Heegard splitting in that case?).
+	of a Heegaard splitting in that case?).
 \end{definition}
 
 \begin{remark}
