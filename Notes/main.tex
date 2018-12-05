@@ -223,14 +223,13 @@ that I wanted to write down to organize them better for myself.
 	TODO Insert proof. %TODO
 \end{example}
 
-
+% % % % % % % % % % % % % % % % % % % % % % % % %
 % % % % % % % % % % % % % % % % % % % % % % % % %
 \chapter{Knot Theory}
 % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % %
 
 \section{Constructions \& Definitions}
-
-
 
 
 \begin{definition}
@@ -338,15 +337,84 @@ that I wanted to write down to organize them better for myself.
 \end{proposition}
 \begin{proof}
 	This follows from Dehn's Lemma and the loop theorem.
-	\marginnote{Dehn's Lemma \citep[4.A.1]{rolfsen2003knots}: 
-		Suppose $M^{3}$ is a $3$-manifold and $f \colon \disk{2} \rightarrow M^{3}$
-		is a piecewise-linear map of a disk with no singularities on the boundary
-		(i.e. $x \in \partial \disk{2}, x \ne y \in \disk{2} \Rightarrow f(x) \ne f(y)$). \\
-		Then there exists an embedding $g \colon \disk{2} \rightarrow M^{3}$
-		with $g(\partial \disk{2}) = f(\partial \disk{2})$.}
 \end{proof}
 
+\begin{lemma}[{Dehn's Lemma \citep[4.A.1]{rolfsen2003knots}}] 
+	Suppose $M^{3}$ is a $3$-manifold and $f \colon \disk{2} \rightarrow M^{3}$
+	is a piecewise-linear map of a disk with no singularities on the boundary, i.e.
+	\[
+		x \in \partial \disk{2}, x \ne y \in \disk{2} \Rightarrow f(x) \ne f(y).
+	\]
+	Then there exists an embedding $g \colon \disk{2} \rightarrow M^{3}$
+	with $g(\partial \disk{2}) = f(\partial \disk{2})$.
+\end{lemma}
+
 \section{Invariants}
+
+\subsection{Fundamental group of knot and link complements}
+
+\begin{proposition}
+	Knot complements $\sphere{3} \setminus K$
+	are aspherical.
+	\marginnote{
+		An space $X$ is called \textit{aspherical} \index{aspherical}
+		if all its higher homotopy groups vanish,
+		i.e. $\pi_{n}(X) = 0$ for $n \ge 2$.
+		
+		For a CW-complex $X$ this is equivalent to
+		the universal covering $\widetilde{X}$
+		being contractible.
+		
+		By definition, an aspherical space in an
+		Eilenberg-MacLane space of type
+		$K(\pi_1(X), 1)$.
+	}
+\end{proposition}
+\begin{proof}
+	Uses the Sphere theorem to show that $\pi_{2}$ is trivial.
+	$H_{3}$ of the universal cover vanishes because it is non-compact.
+	Since the universal cover is a $3$-dimensional manifold we conclude that
+	all its homotopy groups are trivial, so it is contractible.
+	%TODO
+	TODO More details
+\end{proof}
+
+\begin{corollary}
+	Fundamental groups of knot complements are torsion-free.
+\end{corollary}
+
+\begin{proof}
+	The classifying space $K(\pi_1(\sphere{3} \setminus K), 1)$
+	has a finite dimensional model.
+	Now a standard argument using that the group homology of
+	cyclic groups is nontrivial in infinitely many degrees.
+	%TODO
+	TODO
+\end{proof}
+
+\begin{proposition}
+	If $L$ is a non-splittable link, $\sphere{3} \setminus L$
+	is aspherical.
+\end{proposition}
+
+\begin{corollary}
+	The fundamental group of a link complement is torsion free.
+\end{corollary}
+\begin{proof}
+	The link group is a free product of the groups
+	of the non-splittable parts of L.
+	Now use that the free product of torsion free groups is
+	torsion free. \marginnote{
+			In general, all torsion in a free product is
+			conjugated to torsion in one of the summands of the free product.
+		}
+	%TODO
+	TODO 
+\end{proof}
+
+
+
+
 
 \subsection{Alexander polynomial}
 
@@ -420,7 +488,11 @@ that I wanted to write down to organize them better for myself.
 	and as such $\Arf(K) = 0$; $\Arf$ is a well defined concordance invariant.
 \end{remark}
 
+
+% % % % % % % % % % % % % % % % % % % %
 \section{Concordance}
+% % % % % % % % % % % % % % % % % % % %
+
 
 \subsection{Slice knots}
 
@@ -557,6 +629,19 @@ that I wanted to write down to organize them better for myself.
 	of the remaining component(s).
 \end{proposition}
 
+
+\subsection{Heegaard Floer homology}
+
+The concordance invariant $\tau(K) \in \Z$ for a knot $K \subset \sphere{3}$
+is defined in \citep{ozsvath2003knot},
+this yields a homomorphism $\mathcal{C} \rightarrow \Z$.
+
+%TODO
+TODO Write up a definition
+
+
+
+
 \section{Braid groups}
 
 \begin{exercise}
@@ -599,8 +684,11 @@ TODO
 \section{Reading List}
 
 \begin{itemize}
-	\item \citep{ohtsuki2002problems}
-	\item \citep{bar1995vassiliev}
+	\item List of open problems concerning quantum invariants
+		is at
+		\citep{ohtsuki2002problems}
+	\item Vassiliev knot invariants, for this could read
+		\citep{bar1995vassiliev}
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
