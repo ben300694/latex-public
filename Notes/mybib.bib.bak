@@ -51,6 +51,18 @@ Author: {(https://mathoverflow.net/users/1400/kelly-davis)}},
   Year                     = {2013}
 }
 
+@Book{kauffman1987knots,
+  Title                    = {On Knots},
+  Author                   = {Kauffman, L.H.},
+  Publisher                = {Princeton University Press},
+  Year                     = {1987},
+  Series                   = {Annals of mathematics studies},
+
+  ISBN                     = {9780691084350},
+  Lccn                     = {lc87003195},
+  Url                      = {https://books.google.de/books?id=BLvGkIY8YzwC}
+}
+
 @Article{krushkal2015slicing,
   Title                    = {``{S}licing'' the {H}opf link},
   Author                   = {Krushkal, Vyacheslav},
@@ -61,6 +73,14 @@ Author: {(https://mathoverflow.net/users/1400/kelly-davis)}},
   Volume                   = {19},
 
   Publisher                = {Mathematical Sciences Publishers}
+}
+
+@Book{lickorish2012introduction,
+  Title                    = {An introduction to knot theory},
+  Author                   = {Lickorish, WB Raymond},
+  Publisher                = {Springer Science \& Business Media},
+  Year                     = {2012},
+  Volume                   = {175}
 }
 
 @Article{meier2015distinguishing,
@@ -94,6 +114,19 @@ Author: {(https://mathoverflow.net/users/1400/kelly-davis)}},
   Year                     = {2002},
   Pages                    = {377--572},
   Volume                   = {4}
+}
+
+@Article{ozsvath2003knot,
+  Title                    = {Knot Floer homology and the four-ball genus},
+  Author                   = {Ozsv{\'a}th, Peter and Szab{\'o}, Zolt{\'a}n},
+  Journal                  = {Geometry \& Topology},
+  Year                     = {2003},
+  Number                   = {2},
+  Pages                    = {615--639},
+  Volume                   = {7},
+
+  Publisher                = {Mathematical Sciences Publishers},
+  Url                      = {https://arxiv.org/abs/math/0301149}
 }
 
 @InCollection{rolfsen2010tutorial,

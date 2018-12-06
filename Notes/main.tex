@@ -141,9 +141,11 @@
 \newcommand{\RP}[1]{\mathbb{RP}^{#1}}
 \newcommand{\CP}[1]{\mathbb{CP}^{#1}}
 
-% \H is already defined
-\newcommand{\R}{\mathbb{R}}
+
 \newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+% Command \C is already defined
+% Command \H is already defined
 
 %----------------------------------------------------------------------------------------
 
@@ -488,6 +490,42 @@ that I wanted to write down to organize them better for myself.
 	and as such $\Arf(K) = 0$; $\Arf$ is a well defined concordance invariant.
 \end{remark}
 
+
+\subsection{Tristram's $\omega$-signatures}
+
+\begin{definition}[{\citep[Definition 8.8]{lickorish2012introduction},
+	\citep[Definition 12.5]{kauffman1987knots}}]
+	Let $L \subset \sphere{3}$ be an oriented link and
+	$\omega \in \sphere{1} \subset \mathbb{C}$
+	a unit complex number with $\omega \ne 1$. \\
+	The $\omega$-signature $\sigma_{\omega}(L)$ of $L$
+	is defined to be the signature or the Hermitian matrix
+	\marginnote{
+		Any Hermitian matrix is diagonalizable with real eigenvalues,
+		and the signature is defined as the number of positive minus the number
+		of negative eigenvalues. \\
+		Sylvester's Law of Inertia states that the signature of a Hermitian matrix
+		$B$ is not changed by congruence $C \cdot B \cdot C^{T}$.
+	}
+	\begin{equation*}
+		(1 - \omega) A + (1 - \overline{\omega}) A^{T}
+	\end{equation*}
+	where $A$ is any Seifert matrix for $L$.
+\end{definition}
+
+\begin{theorem}
+	The $\omega$-signature $\sigma_{\omega}(L)$ is a well defined link invariant,
+	i.e. it does not depend on the choice of Seifert surface.
+\end{theorem}
+
+\begin{proof}
+	Directly check that the signature does not change under S-equivalence.
+	%TODO
+	TODO Define S-equivalence
+\end{proof}
+
+%TODO
+TODO Relation to zeros of the Alexander polynomial
 
 % % % % % % % % % % % % % % % % % % % %
 \section{Concordance}
