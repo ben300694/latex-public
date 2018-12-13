@@ -2,6 +2,19 @@
 % Encoding: UTF-8
 
 
+@Article{bar2005khovanov,
+  Title                    = {Khovanov's homology for tangles and cobordisms},
+  Author                   = {Bar-Natan, Dror},
+  Journal                  = {Geometry \& Topology},
+  Year                     = {2005},
+  Number                   = {3},
+  Pages                    = {1443--1499},
+  Volume                   = {9},
+
+  Publisher                = {Mathematical Sciences Publishers},
+  Url                      = {https://arxiv.org/abs/math/0410495}
+}
+
 @Article{bar1995vassiliev,
   Title                    = {On the {V}assiliev knot invariants},
   Author                   = {Bar-Natan, Dror},
@@ -12,6 +25,14 @@
   Volume                   = {34},
 
   Publisher                = {Pergamon}
+}
+
+@Article{conway2018notes,
+  Title                    = {Notes on the Levine-Tristram Signature Function},
+  Author                   = {Conway, Anthony},
+  Year                     = {2018},
+
+  Url                      = {http://www.unige.ch/math/folks/conway/Notes/LevineTristramSurvey.pdf}
 }
 
 @Misc{57926,
@@ -104,7 +125,8 @@ Author: {(https://mathoverflow.net/users/1400/kelly-davis)}},
   Pages                    = {201--220},
   Volume                   = {11},
 
-  Publisher                = {Wiley Online Library}
+  Publisher                = {Wiley Online Library},
+  Url                      = {https://arxiv.org/abs/1702.03974}
 }
 
 @Article{ohtsuki2002problems,
@@ -113,7 +135,9 @@ Author: {(https://mathoverflow.net/users/1400/kelly-davis)}},
   Journal                  = {Geometry \& Topology Monographs},
   Year                     = {2002},
   Pages                    = {377--572},
-  Volume                   = {4}
+  Volume                   = {4},
+
+  Url                      = {https://arxiv.org/abs/math/0406190}
 }
 
 @Article{ozsvath2003knot,

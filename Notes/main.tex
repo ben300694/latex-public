@@ -26,6 +26,7 @@
 \setcitestyle{authoryear}
 \bibliographystyle{plainnat}
 
+\usepackage{hyperref}
 \hypersetup{colorlinks} % Comment this line if you don't wish to have colored links
 
 \usepackage{microtype} % Improves character and word spacing
@@ -491,16 +492,21 @@ that I wanted to write down to organize them better for myself.
 \end{remark}
 
 
-\subsection{Tristram's $\omega$-signatures}
+\subsection{Tristram-Levine $\omega$-signatures}
 
 \begin{definition}[{\citep[Definition 8.8]{lickorish2012introduction},
 	\citep[Definition 12.5]{kauffman1987knots}}]
+	\marginnote{
+		The \textit{$\omega$-signature} is sometimes called the
+		\textit{equivariant signature} or
+		\textit{Tristram-Levine-signature}.
+		\index{signature!$\omega$-, equivariant, Tristram-Levine}
+	}
 	Let $L \subset \sphere{3}$ be an oriented link and
 	$\omega \in \sphere{1} \subset \mathbb{C}$
 	a unit complex number with $\omega \ne 1$. \\
 	The $\omega$-signature $\sigma_{\omega}(L)$ of $L$
-	is defined to be the signature or the Hermitian matrix
-	\marginnote{
+	is defined to be the signature of the Hermitian matrix\sidenote{
 		Any Hermitian matrix is diagonalizable with real eigenvalues,
 		and the signature is defined as the number of positive minus the number
 		of negative eigenvalues. \\
@@ -511,6 +517,12 @@ that I wanted to write down to organize them better for myself.
 		(1 - \omega) A + (1 - \overline{\omega}) A^{T}
 	\end{equation*}
 	where $A$ is any Seifert matrix for $L$.
+\end{definition}
+
+\begin{definition}
+	$\sigma_{-1}(L) = \sigma(A + A^{T})$
+	is known as \textbf{the} signature of $L$
+	or the \textit{Murasugi signature} \index{signature!Murasugi}.
 \end{definition}
 
 \begin{theorem}
@@ -525,7 +537,16 @@ that I wanted to write down to organize them better for myself.
 \end{proof}
 
 %TODO
-TODO Relation to zeros of the Alexander polynomial
+TODO The $\omega$-signature can jump at the zeros of the Alexander polynomial
+because at those an eigenvalue can cross zero (changes sign)
+and is constant in between.
+\marginnote{
+	See this answer on MathOverflow: \url{https://mathoverflow.net/questions/85976/why-tristram-levine-signature-jumps-at-the-zeros-of-alexander-polynomial}
+}
+
+There are some notes on the $\omega$-signatures
+(also relating them to the $0$-surgery $\sphere{3}_{0}(K)$
+on the knot $K$) at \citep{conway2018notes}.
 
 % % % % % % % % % % % % % % % % % % % %
 \section{Concordance}
@@ -725,8 +746,13 @@ TODO
 	\item List of open problems concerning quantum invariants
 		is at
 		\citep{ohtsuki2002problems}
-	\item Vassiliev knot invariants, for this could read
+	\item Vassiliev knot invariants, for this
 		\citep{bar1995vassiliev}
+	\item Khovanov homology
+		\citep{bar2005khovanov}
+	
+	\item Kaufman's books, for example
+		\citep{kauffman2001knots}
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
