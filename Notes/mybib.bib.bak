@@ -56,6 +56,15 @@ Author: {(https://mathoverflow.net/users/1400/kelly-davis)}},
   Volume                   = {273}
 }
 
+@Article{freedman2009man,
+  Title                    = {Man and machine thinking about the smooth 4-dimensional {P}oincar\'e conjecture},
+  Author                   = {Freedman, Michael and Gompf, Robert and Morrison, Scott and Walker, Kevin},
+  Journal                  = {arXiv preprint arXiv:0906.5177},
+  Year                     = {2009},
+
+  Url                      = {https://arxiv.org/abs/0906.5177v2}
+}
+
 @Article{hatcher2002algebraic,
   Title                    = {Algebraic topology},
   Author                   = {Hatcher, Allen},
@@ -82,6 +91,27 @@ Author: {(https://mathoverflow.net/users/1400/kelly-davis)}},
   ISBN                     = {9780691084350},
   Lccn                     = {lc87003195},
   Url                      = {https://books.google.de/books?id=BLvGkIY8YzwC}
+}
+
+@Book{kauffman2001knots,
+  Title                    = {Knots and physics},
+  Author                   = {Kauffman, Louis H},
+  Publisher                = {World scientific},
+  Year                     = {2001},
+  Volume                   = {1}
+}
+
+@Article{kronheimer2013gauge,
+  Title                    = {Gauge theory and Rasmussen's invariant},
+  Author                   = {Kronheimer, PB and Mrowka, TS},
+  Journal                  = {Journal of Topology},
+  Year                     = {2013},
+  Number                   = {3},
+  Pages                    = {659--674},
+  Volume                   = {6},
+
+  Publisher                = {Oxford University Press},
+  Url                      = {https://arxiv.org/abs/1110.1297}
 }
 
 @Article{krushkal2015slicing,
@@ -151,6 +181,15 @@ Author: {(https://mathoverflow.net/users/1400/kelly-davis)}},
 
   Publisher                = {Mathematical Sciences Publishers},
   Url                      = {https://arxiv.org/abs/math/0301149}
+}
+
+@Article{piccirillo2018conway,
+  Title                    = {The Conway knot is not slice},
+  Author                   = {Piccirillo, Lisa},
+  Journal                  = {arXiv preprint arXiv:1808.02923},
+  Year                     = {2018},
+
+  Url                      = {https://arxiv.org/abs/1808.02923}
 }
 
 @InCollection{rolfsen2010tutorial,
