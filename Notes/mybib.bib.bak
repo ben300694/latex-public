@@ -102,7 +102,7 @@ Author: {(https://mathoverflow.net/users/1400/kelly-davis)}},
 }
 
 @Article{kronheimer2013gauge,
-  Title                    = {Gauge theory and Rasmussen's invariant},
+  Title                    = {{G}auge theory and {R}asmussen's invariant},
   Author                   = {Kronheimer, PB and Mrowka, TS},
   Journal                  = {Journal of Topology},
   Year                     = {2013},
@@ -207,6 +207,16 @@ Author: {(https://mathoverflow.net/users/1400/kelly-davis)}},
   Publisher                = {American Mathematical Soc.},
   Year                     = {2003},
   Volume                   = {346}
+}
+
+@Unpublished{PeterTeichner2010,
+  Title                    = {{S}lice {K}nots: {K}not {T}heory in the 4th {D}imension},
+  Author                   = {Teichner, Peter and Collins, Julia and Powell, Mark},
+  Year                     = {2010},
+
+  Owner                    = {bruppik},
+  Timestamp                = {2019.01.21},
+  Url                      = {https://www.maths.ed.ac.uk/~v1ranick/papers/sliceknots2.pdf}
 }
 
 @Misc{SineCurve,
