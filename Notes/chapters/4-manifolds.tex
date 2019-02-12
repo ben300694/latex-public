@@ -1,0 +1,83 @@
+% % % % % % % % % % % % % % % % % % % % % % % % %
+\chapter{4-manifolds}
+% % % % % % % % % % % % % % % % % % % % % % % % %
+
+\section{Bordism}
+
+\begin{definition}
+	The $n$-dimensional oriented \textit{cobordism group}
+	\index{cobordism group}
+	over the space $X$ is
+	\begin{equation*}
+		\Omega_{n}[X] =
+			\frac{ \{ f \colon M^{n} \rightarrow X \mid M^n \textrm{ oriented, closed, } 
+			n\textrm{-dim. manifold} \}}{\textrm{bordism}}
+	\end{equation*}
+	\marginnote{If $\alpha \colon M^{n} \rightarrow X$
+		represents a bordism class, $M^n$ is allowed to
+		have more than one component.}
+\end{definition}
+
+\begin{proposition}[{\citep[13.15, p. 319]{kauffman1987knots}}]
+	\begin{itemize}
+		\item Pushing forward a fundamental class
+		\begin{align*}
+			\Omega_n [X] & \rightarrow H_{n}(X ; \Z) \\ 
+			[f \colon M^{n} \rightarrow X] & \mapsto f_{*}([M])
+		\end{align*}
+		is an isomorphism for $n \le 3$.
+		
+		\item The sequence
+		\begin{equation*}
+			\Omega_{4}[\ast] \rightarrow \Omega_{4}[X] \rightarrow H_{4}(X ; \Z)
+		\end{equation*}
+		is exact.
+	\end{itemize}
+\end{proposition}
+
+%TODO
+
+
+% ----------------------
+\section{Trisections}
+% ----------------------
+
+\begin{fullwidth}
+	\textsc{``Trisections are to $4$-manifolds as Heegaard splittings are to
+		$3$-manifolds''}
+\end{fullwidth}
+
+\marginnote{
+	\begin{itemize}
+		\item $\#^n A$ is the connected sum of $n$ copies of $A$,
+		with $\#^{0} A = \sphere{m}$
+	\end{itemize}}
+\begin{definition}
+	\begin{itemize}
+		\item The standard genus $g$ surface is
+		\[
+			\Sigma_g = {\#}^{g} (\sphere{1} \times \sphere{1})
+		\]
+		\item The standard genus $g$ solid handlebody is
+		\[
+			H_g = \natural^g (\sphere{1} \times \disk{2})
+		\]
+		with $\partial H_{g} = \Sigma_{g}$
+		\marginnote{$\partial (A \natural B) = (\partial A) \# (\partial B)$}
+		
+		\item The standard $4$-dimensional $1$-handlebody
+		(of ``genus $k$'') is
+		\[
+			Z_{k} =\natural^{k} (\sphere{1} \times \disk{3})
+		\]
+		i.e.\ a $4$-ball to which we attach $k$-many
+		$4$-dimensional $1$-handles.
+	\end{itemize}
+\end{definition}
+\begin{marginfigure}
+	\begin{center}
+		\includegraphics{./pictures/standard_manifolds.png}
+	\end{center}
+	\caption{Standard manifolds of dimension 2, 3}
+	\label{fig:standard_manifolds}
+\end{marginfigure}

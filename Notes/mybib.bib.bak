@@ -24,7 +24,8 @@
   Pages                    = {423--472},
   Volume                   = {34},
 
-  Publisher                = {Pergamon}
+  Publisher                = {Pergamon},
+  Url                      = {https://www.math.toronto.edu/drorbn/papers/OnVassiliev/OnVassiliev.pdf}
 }
 
 @Article{cochran2014injectivity,
@@ -85,6 +86,19 @@ Author: {(https://mathoverflow.net/users/1400/kelly-davis)}},
   Year                     = {2002},
   Number                   = {9},
   Volume                   = {606}
+}
+
+@Article{hom2011note,
+  Title                    = {A note on cabling and L--space surgeries},
+  Author                   = {Hom, Jennifer},
+  Journal                  = {Algebraic \& Geometric Topology},
+  Year                     = {2011},
+  Number                   = {1},
+  Pages                    = {219--223},
+  Volume                   = {11},
+
+  Publisher                = {Mathematical Sciences Publishers},
+  Url                      = {https://arxiv.org/abs/0912.4046v1}
 }
 
 @Book{janich2013topologie,
@@ -230,6 +244,15 @@ Author: {(https://mathoverflow.net/users/1400/kelly-davis)}},
   Owner                    = {bruppik},
   Timestamp                = {2019.01.21},
   Url                      = {https://www.maths.ed.ac.uk/~v1ranick/papers/sliceknots2.pdf}
+}
+
+@Article{turner2006five,
+  Title                    = {Five lectures on Khovanov homology},
+  Author                   = {Turner, Paul},
+  Journal                  = {arXiv preprint math/0606464},
+  Year                     = {2006},
+
+  Url                      = {https://arxiv.org/abs/math/0606464}
 }
 
 @Misc{SineCurve,

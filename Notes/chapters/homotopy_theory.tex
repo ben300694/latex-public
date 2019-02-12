@@ -1,0 +1,45 @@
+% % % % % % % % % % % % % % % % % % % % % % % % %
+\chapter{Homotopy theory}
+% % % % % % % % % % % % % % % % % % % % % % % % %
+
+\section{CW-complexes}
+
+\begin{definition}
+	A map $f \colon X \rightarrow Y$ is called a
+	\textit{weak homotopy equivalence} \index{homotopy equivalence!weak}
+	if it induces isomorphisms
+	\[
+	\pi_n(X, x_0) \rightarrow \pi_n(Y, f(x_0))
+	\]
+	for all $n \ge 0$ and all choices of basepoints $x_0$ in $X$.
+\end{definition}
+
+\begin{theorem}[Whitehead's Theorem]
+	A weak homotopy equivalence between CW-complexes is a homotopy equivalence.
+\end{theorem}
+
+% {\cite[Proposition 4.15]{hatcher2002algebraic}}
+\begin{proposition}[Geometric interpretation of $n$-connectedness]
+	If $(X, A)$ is an $n$-connected CW-pair, then there exists
+	a CW-pair $(Z, A) \sim_{\rel A} (X, A)$
+	such that all cells of $Z \setminus A$ have dimension greater than $n$.
+\end{proposition}
+
+\section{Homology}
+
+\begin{definition}[Acyclic]
+	A space $X$ is called \textit{acyclic}\index{acyclic} if $\widetilde{H}_{i}(X) = 0$ for all $i$,
+	i.e. if its reduced homology vanishes.
+\end{definition}
+
+\begin{example}
+	Removing a point from a homology sphere yields an acyclic space.
+	If the dimension was at least $3$ this does not change
+	the fundamental group, so if we started with a nontrivial homology sphere
+	(i.e.\ $\pi_1 \ne 1$) this will give an example of an acyclic, but
+	non-contractible space.
+	
+	This example for the Poincar\'e homology sphere is described in
+	\citep[Example 2.38]{hatcher2002algebraic}.
+	TODO Insert proof. %TODO
+\end{example}
