@@ -2,7 +2,9 @@
 \chapter{4-manifolds}
 % % % % % % % % % % % % % % % % % % % % % % % % %
 
+% ----------------------
 \section{Bordism}
+% ----------------------
 
 \begin{definition}
 	The $n$-dimensional oriented \textit{cobordism group}
@@ -37,20 +39,85 @@
 
 %TODO
 
+% ----------------------
+\section{Andrews-Curtis Conjecture}
+% ----------------------
+
+\citep{SCP4}
+
+\begin{definition}
+	A \textit{balanced presentation} \index{presentation!balanced} is a presentation
+	\[
+		\langle g_1, \ldots, g_n \mid r_1, \ldots, r_n \rangle
+	\]
+	with the same number of generators and relations.
+	
+	The Andrew-Curtis moves on a balanced presentation are
+	\begin{enumerate}[label=(\roman*)]
+		\item \textbf{1-handle slides:} Replace a pair of generators
+		$ \{ x, y \} $ by $ \{ x, xy \} $
+		
+		\item \textbf{2-handle slides:} Replace a pair of relations
+		$ \{ r, s \} $ by $ \{ grg^{-1}s, s \} $, where $ g $ is any word in the generators
+		
+		\item \textbf{1-2-handle cancellations:} Add a generator together with
+		a new relation killing it
+	\end{enumerate}
+	In particular, you are \underline{not} allowed to make a copy of a relation to
+	keep for later use (which would correspond to 
+	\textbf{2-3-handle creation/cancellation}).
+\end{definition}
+
+\begin{conjecture*}[Andrews-Curtis conjecture \textcolor{red}{(False?)}]
+	Any balanced presentation of the trivial group can be transformed
+	by Andrews-Curtis moves to the trivial presentation.
+\end{conjecture*}
+
+\begin{example}
+	%TODO
+	TODO
+	\[
+		\langle x, y \mid xyx = yxy, x^{5} = y^{4} \rangle
+	\]
+	is a balanced presentation of the trivial group,
+	but until now nobody was able to find a sequence of
+	Andrews-Curtis moves to transform it into the trivial presentation
+	\[
+		\langle x, y \mid x, y \rangle
+	\]
+\end{example}
+
+%TODO
+TODO
+Explain how to construct homotopy $4$-spheres from balanced
+presentations of the trivial group
+\citep{akbulut1985potential}
 
 % ----------------------
 \section{Trisections}
 % ----------------------
 
-\begin{fullwidth}
+\begin{center}
 	\textsc{``Trisections are to $4$-manifolds as Heegaard splittings are to
 		$3$-manifolds''}
-\end{fullwidth}
+\end{center}
+
+\subsection{References}
+
+\begin{itemize}
+	\item Original paper: \citep{gay2016trisecting}
+	\item Lecture notes: \citep{gay2019heegaard}
+\end{itemize}
+
+\subsection{Definitions}
 
 \marginnote{
 	\begin{itemize}
 		\item $\#^n A$ is the connected sum of $n$ copies of $A$,
 		with $\#^{0} A = \sphere{m}$
+		
+		\item TODO
+		%TODO
 	\end{itemize}}
 \begin{definition}
 	\begin{itemize}
