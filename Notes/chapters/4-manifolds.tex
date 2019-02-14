@@ -1,5 +1,5 @@
 % % % % % % % % % % % % % % % % % % % % % % % % %
-\chapter{4-manifolds}
+\chapter{4-Manifolds}
 % % % % % % % % % % % % % % % % % % % % % % % % %
 
 % ----------------------
@@ -39,9 +39,23 @@
 
 %TODO
 
-% ----------------------
+% ------------------------------------
+\section{Mazur manifolds}
+% ------------------------------------
+
+\textbf{References}:
+\begin{itemize}
+	\item Homology spheres: \citep{saveliev2013invariants}
+	\item \citep{akbulut1979mazur}
+\end{itemize}
+
+%TODO
+TODO
+
+
+% ------------------------------------
 \section{Andrews-Curtis Conjecture}
-% ----------------------
+% ------------------------------------
 
 \citep{SCP4}
 
@@ -93,9 +107,82 @@ Explain how to construct homotopy $4$-spheres from balanced
 presentations of the trivial group
 \citep{akbulut1985potential}
 
-% ----------------------
+\marginnote{
+	In \citep[I.3]{kirby2006topology} Kirby suspected that the
+	\textit{Dolgachev surface}
+	\index{Dolgachev surface} $E(1)_{2,3}$ 
+	(an exotic copy of the rational elliptic surface
+	$ \CP{2} \# 9 \overline{\CP{2}} $)
+	might require 1- and/or 3-handles.
+	But in \citep{akbulut2008dolgachev} Akbulut found a
+	handlebody presentation without those.
+}
+\begin{openquestion*}[\textcolor{olive}{(Still open?)}]
+	Does a simply connected, closed, smooth $4$-manifold need
+	$1$-handles and/or $3$-handles?
+\end{openquestion*}
+
+\begin{observation}
+	If exotic $\sphere{4}$ exist, their handle decomposition must
+	contain $1$- or $3$-handles.
+	
+	For this suppose you have a handle decomposition of a manifold
+	with the homology of $\sphere{4}$ and no $1$- and $3$-handles,
+	then there could not be any $2$-handles either because these would
+	give nontrivial second homology. 
+\end{observation}
+
+\begin{definition}
+	Use the following notation to denote the abelian group
+	\begin{equation*}
+		\Gamma_n = 
+		\frac{\textrm{orientation preserving diffeomorphisms of } \sphere{n-1}}
+			 {\textrm{those that extend to a diffeomorphism of } \disk{n}}
+	\end{equation*}
+\end{definition}
+\marginnote{
+	\begin{itemize}
+		\item $\Gamma_{1} = \Gamma_{2} = 0$
+		\item Munkres, Smale: $\Gamma_{3} = 0$
+		\item Cerf: $\Gamma_{4} = 0$
+		\item Kervaire, Milnor: $\Gamma_{5} = \Gamma_{6} = 0$,
+		$\Gamma_{7} = \Z / 28$
+	\end{itemize}
+	}
+
+\begin{proposition}
+	For $n \ge 5$ we can identify $\Gamma_{n}$
+	with the set of oriented smooth structures
+	of the topological $n$-sphere.
+	I.e. in dimension $\ge 5$ all exotic spheres
+	can be obtained by using a diffeomorphism of
+	$\sphere{n-1}$ to glue two $n$-disks along their boundary.
+\end{proposition}
+
+\begin{theorem}[Cerf, \citep{geiges2010eliashberg}]
+	Any diffeomorphism of the $3$-sphere $\sphere{3}$
+	extends over the $4$-ball $\disk{4}$,
+	in other words
+	\[
+		\Gamma_4 = 0.
+	\]
+\end{theorem}
+
+\begin{observation}
+	Cerf's theorem implies that there are no exotic structures
+	on $\sphere{4}$ that can be obtained by gluing
+	two $4$-disks along their
+	boundary.
+\end{observation}
+
+
+
+
+
+\newpage
+% ------------------------------------
 \section{Trisections}
-% ----------------------
+% ------------------------------------
 
 \begin{center}
 	\textsc{``Trisections are to $4$-manifolds as Heegaard splittings are to

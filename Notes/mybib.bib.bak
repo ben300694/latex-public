@@ -2,9 +2,38 @@
 % Encoding: UTF-8
 
 
+@Article{akbulut2008dolgachev,
+  Title                    = {The Dolgachev Surface},
+  Author                   = {Akbulut, Selman},
+  Journal                  = {arXiv preprint arXiv:0805.1524},
+  Year                     = {2008},
+
+  Url                      = {https://arxiv.org/abs/0805.1524}
+}
+
 @Article{akbulut1985potential,
   Title                    = {A potential smooth counterexample in dimension 4 to the {P}oincar{\'e} conjecture, the {S}choenflies conjecture, and the {A}ndrews--{C}urtis conjecture},
   Author                   = {Akbulut, Selman and Kirby, Robion}
+}
+
+@Article{akbulut1979mazur,
+  Title                    = {Mazur manifolds.},
+  Author                   = {Akbulut, Selman and Kirby, Robion and others},
+  Journal                  = {The Michigan Mathematical Journal},
+  Year                     = {1979},
+  Number                   = {3},
+  Pages                    = {259--284},
+  Volume                   = {26},
+
+  Publisher                = {The University of Michigan}
+}
+
+@Book{baez1994gauge,
+  Title                    = {Gauge fields, knots and gravity},
+  Author                   = {Baez, John and Muniain, Javier P},
+  Publisher                = {World Scientific Publishing Company},
+  Year                     = {1994},
+  Volume                   = {4}
 }
 
 @Article{bar2005khovanov,
@@ -47,7 +76,7 @@
 }
 
 @Article{conway2018notes,
-  Title                    = {Notes on the Levine-Tristram Signature Function},
+  Title                    = {Notes on the {L}evine-{T}ristram {S}ignature {F}unction},
   Author                   = {Conway, Anthony},
   Year                     = {2018},
 
@@ -106,6 +135,19 @@ Author: {(https://mathoverflow.net/users/1400/kelly-davis)}},
   Url                      = {https://arxiv.org/abs/1902.01797}
 }
 
+@Article{geiges2010eliashberg,
+  Title                    = {{E}liashberg's proof of {C}erf's theorem},
+  Author                   = {Geiges, Hansj{\"o}rg and Zehmisch, Kai},
+  Journal                  = {Journal of Topology and Analysis},
+  Year                     = {2010},
+  Number                   = {04},
+  Pages                    = {543--579},
+  Volume                   = {2},
+
+  Publisher                = {World Scientific},
+  Url                      = {https://arxiv.org/abs/1007.3606}
+}
+
 @Article{hatcher2002algebraic,
   Title                    = {Algebraic topology},
   Author                   = {Hatcher, Allen},
@@ -116,7 +158,7 @@ Author: {(https://mathoverflow.net/users/1400/kelly-davis)}},
 }
 
 @Article{hom2011note,
-  Title                    = {A note on cabling and L--space surgeries},
+  Title                    = {A note on cabling and {L}--space surgeries},
   Author                   = {Hom, Jennifer},
   Journal                  = {Algebraic \& Geometric Topology},
   Year                     = {2011},
@@ -153,6 +195,14 @@ Author: {(https://mathoverflow.net/users/1400/kelly-davis)}},
   Publisher                = {World scientific},
   Year                     = {2001},
   Volume                   = {1}
+}
+
+@Book{kirby2006topology,
+  Title                    = {The {T}opology of 4-manifolds},
+  Author                   = {Kirby, Robion C},
+  Publisher                = {Springer},
+  Year                     = {2006},
+  Volume                   = {1374}
 }
 
 @Article{kronheimer2013gauge,
@@ -261,6 +311,14 @@ Author: {(https://mathoverflow.net/users/1400/kelly-davis)}},
   Publisher                = {American Mathematical Soc.},
   Year                     = {2003},
   Volume                   = {346}
+}
+
+@Book{saveliev2013invariants,
+  Title                    = {Invariants of Homology 3-spheres},
+  Author                   = {Saveliev, Nikolai},
+  Publisher                = {Springer Science \& Business Media},
+  Year                     = {2013},
+  Volume                   = {140}
 }
 
 @Unpublished{Teichner2010,
