@@ -1,14 +1,18 @@
 \chapter{Topics to study and Reading List}
 
+% ------------------------------------
 \section{Questions}
+% ------------------------------------
 
 %TODO
 \begin{itemize}
-	\item TODO
+	\item TODO Collect questions that come up, and preferably
+	with an answer
 \end{itemize}
 
-
+% ------------------------------------
 \section{Reading List}
+% ------------------------------------
 
 \begin{itemize}
 	\item List of open problems concerning quantum invariants
@@ -27,3 +31,69 @@
 	\item Baez's book on gauge theory
 		\citep{baez1994gauge}
 \end{itemize}
+
+
+\newpage
+% ------------------------------------
+\section{Possible Projects}
+% ------------------------------------
+
+\subsection{Using Machine Learning to calculate Knot Invariants}
+
+\textbf{Literature:}
+\begin{itemize}
+	\item \citep{1902.05547}: The authors used a neural network
+	to investigate a relationship between the Jones polynomial of a knot
+	and the hyperbolic volume of the knot complement in case that the knot is
+	hyperbolic
+	
+	\item \citep{hughes2016neural}
+	
+	\item \citep{bull2018machine}
+\end{itemize}
+
+\noindent \textbf{Ideas:}
+\begin{itemize}
+	\item Use similar machine learning techniques to approximate
+	concordance invariants of knots and links
+	
+	\item Use Khovanov homology groups as inputs for the
+	network in the hope that this captures more combinatorial content
+	about the knot than merely the coefficients of knot polynomials.
+	One could also try to apply this to other knot homology theories
+	
+	\item Use a convolutional neural network to encode and process $2$-dimensional input:
+	For example the Khovanov and Heegaard-Floer complexes of a knot can be equipped
+	with various gradings which could give extra information
+	
+	\item In the case that there seems to be a previously unknown relationship
+	between invariants one could then try to prove this exactly 
+\end{itemize}
+
+
+
+\subsection{Visualizing Slice Disks in Trisection diagrams}
+
+There is a relative setting where trisections can be used to
+describe embedded $2$-dimensional submanifolds of
+$4$-manifolds.
+Maybe from this one could try to get new statements about
+concordance?
+
+
+\noindent \textbf{TODO:}
+\begin{itemize}
+	\item Learn more about trisections and in particular about
+	representing surfaces in $4$-manifolds
+	
+	\item Find out what people have already tried with questions
+	about concordance using trisections
+	
+	\item There should be a calculus for modifying trisections?
+	Find out more about this.
+	Would it be feasible to implement this in a computer program,
+	in the spirit of something like Frank Swenton's KirbyCalculator?
+	\citep{kirbycalculator}
+	
+\end{itemize}
+

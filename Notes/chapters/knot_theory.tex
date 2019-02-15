@@ -102,6 +102,36 @@
 	trivial group.
 \end{lemma}
 
+
+\begin{definition}
+	A \textit{metabelian group} \index{group!metabelian} $G$ is a group
+	whose commutator subgroup $[G, G]$ is abelian.
+	
+	Equivalently, $G$ is metabelian if and only if there is an
+	abelian normal subgroup $A \trianglelefteq G$
+	such that the quotient group $G/A$ is abelian.
+	In particular this means that metabelian groups
+	are precisely the solvable groups of
+	derived length\sidenote{The least $n$
+		such that $G^{(n)} = \{1\}$
+		is called the
+		\textit{derived length} \index{group!derived length}
+		of a solvable group $G$.}
+	$\le 2$.
+\end{definition}
+
+\begin{example}
+	\begin{itemize}
+		\item Any dihedral group is metabelian, because
+		is contains a cyclic normal subgroup of index 2.
+		
+		\item The symmetric group $S_{4}$ is not metabelian, because
+		its commutator subgroup is the non-abelian alternating
+		group $A_{4}$.
+	\end{itemize}
+\end{example}
+
+
 \subsection{Characterizing the unknot}
 
 \begin{proposition}
@@ -204,7 +234,9 @@
 	of the Laurent ring $\Z[t, t^{-1}]$''.
 	\marginnote{
 		\begin{remark}
-			$\Z[t^{\pm 1}]$ is \textbf{not} a PID.
+			$\Z[t^{\pm 1}]$ is \textbf{not} a PID,
+			for example the ideal $(2, 1+t)$ has height $2$
+			and thus is not principal.
 		\end{remark}
 	}
 \end{definition}
@@ -318,11 +350,36 @@ There are some notes on the $\omega$-signatures
 (also relating them to the $0$-surgery $\sphere{3}_{0}(K)$
 on the knot $K$) at \citep{conway2018notes}.
 
+\newpage
 % ----------------------
 \section{Concordance}
 % ----------------------
 
 \subsection{Slice knots}
+
+\begin{definition}
+	A knot $K \subset \sphere{3}$ is
+	\textit{topologically slice} \index{slice!topologically}
+	if it bounds a locally flat $2$-disk $\Delta^{2} \subset \disk{4}$.
+\end{definition}
+
+\begin{definition}
+	%TODO
+	\begin{itemize}
+		\item TODO: Define smoothly slice and ribbon
+		\item TODO: Draw pictures
+	\end{itemize}
+\end{definition}
+
+\begin{observation}
+	One can connect sum a given slice disk with any knotted
+	$2$-sphere to obtain infinitely many non-isotopic
+	slice disks for every slice knot.
+	To see that this gives non-isotopic disks one can look
+	at the fundamental groups of the slice disk exteriors,
+	$\pi_{1}(\disk{4} \setminus \Delta)$.
+\end{observation}
+
 
 \begin{definition}[Surgery on a knot in $\sphere{3}$]
 	The notation $\sphere{3}_{0}(K)$ denotes the \textit{$0$-surgery on a knot}
@@ -530,6 +587,7 @@ Properties of $\tau$:
 	\end{itemize}
 \end{example}
 
+\newpage
 % ----------------------
 \section{Satellite operators}
 % ----------------------
