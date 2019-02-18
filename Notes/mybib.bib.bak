@@ -166,6 +166,18 @@ Author: {(https://mathoverflow.net/users/1400/kelly-davis)}},
   Volume                   = {606}
 }
 
+@Article{hedden2010notions,
+  Title                    = {Notions of positivity and the {O}zsv{\'a}th--{S}zab{\'o} concordance invariant},
+  Author                   = {Hedden, Matthew},
+  Journal                  = {Journal of Knot Theory and its Ramifications},
+  Year                     = {2010},
+  Number                   = {05},
+  Pages                    = {617--629},
+  Volume                   = {19},
+
+  Publisher                = {World Scientific}
+}
+
 @Article{hom2011note,
   Title                    = {A note on cabling and {L}--space surgeries},
   Author                   = {Hom, Jennifer},
@@ -349,8 +361,20 @@ Author: {(https://mathoverflow.net/users/1400/kelly-davis)}},
   Volume                   = {140}
 }
 
+@Article{scharlemann1989link,
+  Title                    = {Link genus and the {C}onway moves},
+  Author                   = {Scharlemann, Martin and Thompson, Abigail},
+  Journal                  = {Commentarii Mathematici Helvetici},
+  Year                     = {1989},
+  Number                   = {1},
+  Pages                    = {527--535},
+  Volume                   = {64},
+
+  Publisher                = {Springer}
+}
+
 @Other{kirbycalculator,
-  Title                    = {KirbyCalculator},
+  Title                    = {{K}irby{C}alculator},
   Author                   = {Swenton, Frank},
   Owner                    = {Frank Swenton},
   Url                      = {KLO-Software.net}

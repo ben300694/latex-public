@@ -271,6 +271,22 @@
 
 
 
+\subsection{Unknotting number}
+
+\begin{definition}
+	The unknotting number $u(K)$ of a knot $K$
+	is the minimum number crossing changes required
+	to transform it into an unknot.
+\end{definition}
+
+
+\begin{proposition}[\citep{scharlemann1989link}]
+	Doubled knots are exactly those knots
+	with three-genus and unknotting number $=1$.
+\end{proposition}
+
+
+
 \subsection{Arf invariant}
 
 \begin{theorem}
@@ -646,19 +662,38 @@ $K$ and $J$.
 	with just two generators.
 \end{exercise}
 
-\begin{definition}
+\begin{definition}[\citep{hedden2010notions}]
+	A knot which has a diagram with only positive crossings
+	is called a \textit{positive knot} \index{knot!positive}.
+	\marginnote{Equivalently, a knot is positive
+		if it has a projection for which the writhe
+		is equal to the crossing number.}
+	
+	\textit{Positive braids} \index{braid!positive} are those
+	knots and links which can be obtained as the closure
+	of a word in the braid group containing
+	only positive generators\sidenote{I.e.\ closures of
+		products $ \prod\limits_{k=1}^{m} \sigma_{i_{k}} $,
+		where there are no $\sigma_{i}^{-1}$,
+		and $\sigma_{i}$ is a positive Artin generator.}.
+	
 	A \textit{quasi-positive braid} \index{braid!quasi-positive}
 	is a braid that is a product of 
 	conjugates of positive generators\sidenote{
-		I.e. as products of positive bands
+		I.e.\ as products of positive bands
 		$\alpha \cdot \sigma_{j} \cdot \alpha^{-1}$,
-		where $\alpha \in B_{n}$ is an arbitrary braid word
-		and $\sigma_{j}$ is a positive Artin generator.}.
+		where $\alpha \in B_{n}$ is an arbitrary braid word}.
 	
 	A knot is called
 	\textit{quasi-positive} \index{knot!quasi-positive}
 	if it is the
 	closure of a quasi-positive braid.
+	\marginnote{Quasipositive knots are closures
+		of braids consisting of arbitrary conjugates of positive generators.
+		
+		Strongly quasipositive knots require these conjugates
+		to be of a special form useful for constructing
+		Seifert surfaces.}
 \end{definition}
 
 
