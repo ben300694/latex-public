@@ -152,6 +152,41 @@
 	with $g(\partial \disk{2}) = f(\partial \disk{2})$.
 \end{lemma}
 
+
+\subsection{Branched Coverings}
+
+\begin{definition}[Cyclic covers branched over a knot]
+	%TODO
+	TODO Insert definition, examples
+\end{definition}
+
+
+\begin{exercise}[{\citep[10.F.2]{rolfsen2003knots}}]
+	Find a $600$-fold branched noncyclic covering
+	$\sphere{3} \rightarrow \sphere{3}$
+	branched over the trefoil.
+\end{exercise}
+
+\noindent \textbf{Solution:}
+The Poincar{\'e} homology sphere $P^{3}$ appears the
+$5$-fold cyclic covering of $\sphere{3}$ branched over the trefoil.
+Moreover, $\sphere{3}$ is the $120$-sheeted universal covering of
+the Poincar{\'e} manifold, so by composing these we obtain
+a $5 \cdot 120 = 600$-sheeted branched covering of the $3$-sphere:
+\begin{center}
+	\begin{tikzcd}[row sep = tiny]
+		& \sphere{3} \arrow{dd}{\text{\tiny \parbox{1.5cm}{\centering 600-fold branched cover}}} 
+		  \arrow{dl}[sloped, above]{\text{\tiny \parbox{1cm}{\centering 5-fold branched cover}}} \\
+		P^{3} \arrow{dr}[sloped, below]{\text{\tiny \parbox{1cm}{\centering 120-fold cover}}} & \\
+		& \sphere{3}
+	\end{tikzcd}
+\end{center}
+
+
+
+
+
+\newpage
 \section{Invariants}
 
 \subsection{Fundamental group of knot and link complements}
@@ -365,6 +400,10 @@ and is constant in between.
 There are some notes on the $\omega$-signatures
 (also relating them to the $0$-surgery $\sphere{3}_{0}(K)$
 on the knot $K$) at \citep{conway2018notes}.
+
+
+
+
 
 \newpage
 % ----------------------
