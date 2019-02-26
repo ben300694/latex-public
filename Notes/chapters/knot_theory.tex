@@ -674,6 +674,8 @@ Properties of $\tau$:
 \end{example}
 
 
+
+
 \newpage
 % ----------------------
 \section{Property P and R}
@@ -691,20 +693,58 @@ Properties of $\tau$:
 \end{theorem}
 
 \begin{definition}[Property R]
-	If surgery on a knot cannot yield
+	If $0$-framed surgery on a knot cannot yield
 	$\sphere{1} \times \sphere{2}$ then it
 	satisfies
-	\textit{Property R} \index{Property!R}.
+	\textit{Property R} \index{Property!R}.\marginnote{
+			We could also drop the condition
+			that the framing is assumed to be
+			trivial: It is clear from looking at the
+			intersection pairing on the trace of the surgery
+			that if the result is $\sphere{1} \times \sphere{2}$,
+			the framing had to be $0$.
+			%TODO More details?
+		}
 \end{definition}
 
 \begin{theorem}[Gabai]
-	If surgery on $K \subset \sphere{3}$ is 
+	If $0$-framed surgery on $K \subset \sphere{3}$ is 
 	$\sphere{1} \times \sphere{2}$
-	then $K$ is the unknot.\marginnote{
+	then $K$ is the unknot\sidenote{
 			In other words:
 			All knots, except the unknot, have Property R.
-		}
+		}.
 \end{theorem}
+
+
+\begin{conjecture}[Generalized Property R, \citep{scharlemann2009fibered},
+	{\citep[Problem 1.82]{kirby1995problems}}]
+	Suppose $L \subset \sphere{3}$ is an $n$-component
+	link with integer framings, and surgery on $L$ gives
+	the connected sum $ \#^{n} (\sphere{1} \times \sphere{2}) $.
+	
+	Then there is a sequence of handle slides on $L$
+	that converts $L$ into a $0$-framed unlink.
+\end{conjecture}
+
+\begin{remark}
+	\begin{itemize}
+		\item For $n$=1, i.e. a single component, there are no slides
+		possible and the statement is Gabai's theorem.
+		
+		\item For $n > 1$ it is necessary to include the possibility
+		of handle slides into the theorem.
+		For an example, you can use Kirby moves
+		on a zero framed unlink to complicate the link.
+		
+		\item The only framed links that are relevant for the
+		conjecture are those where all framings and linking
+		numbers are trivial.
+	\end{itemize}
+\end{remark}
+
+
+
 
 
 \newpage
