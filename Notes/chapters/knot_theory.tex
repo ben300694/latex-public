@@ -477,21 +477,28 @@ on the knot $K$) at \citep{conway2018notes}.
 	\end{itemize}
 \end{theorem}
 
-\begin{remark}[Exotic $\R^{4}$ from a topologically, but
+\begin{remark}[Exotic $\RR^{4}$ from a topologically, but
 	not smoothly slice knot]
 	References:
 	\citep{57926}
 	%TODO
 	TODO
+	
+	Observe that this construction gives a \textit{large}
+	\index{exotic $\RR^{4}$!large}
+	exotic $\RR^{4}$ since it contains the compact subset
+	$X_{0}(K)$ which does not embed smoothly in
+	$\RR^{4}_{\mathrm{std}}$.
 \end{remark}
 
 
 \begin{definition}
 	A knot $K$ is called \textit{doubly slice} \index{knot!doubly slice}
 	if it occurs as an
-	equatorial cross section\sidenote{
-			$\sphere{3} \subset \sphere{4}$ denotes the equator.
-		}
+	equatorial\sidenote{
+		$\sphere{3} \subset \sphere{4}$ is the standard inclusion
+		of the equator.
+	} cross section
 	\[
 		K = S \cap \sphere{3}
 	\]
@@ -502,6 +509,26 @@ on the knot $K$) at \citep{conway2018notes}.
 			different ways.
 		}
 \end{definition}
+
+\begin{lemma}[\citep{friedl2quick}, \citep{friedl2015twist}]
+	$K \# -K$ is smoothly doubly slice.
+\end{lemma}
+
+\begin{remark}
+	We can use the standard spinning of this knot to obtain a $2$-sphere
+	with cross-section $K \# -K$, but this $\sphere{2} \subset \sphere{4}$
+	will be knotted in general.
+	We can see this because its knot group 
+	is the same as the one of the knot we started with.
+	So we cannot use this ``obvious'' sphere to prove that $ K \# -K $ knot is doubly slice.
+	
+	As an alternative, we can use the (more complicated)
+	$\pm 1$-twist spin of our knot to obtain an unknotted
+	sphere in $\sphere{4}$ with cross-section
+	$K \# -K$ \citep{zeeman1965twisting}.
+	
+\end{remark}
+
 
 \begin{definition}
 	A knot $K \subset \sphere{3}$ is \textit{homotopy ribbon} \index{knot!homotopy ribbon}

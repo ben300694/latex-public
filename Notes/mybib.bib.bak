@@ -122,6 +122,23 @@ Author: {(https://mathoverflow.net/users/1400/kelly-davis)}},
   Url                      = {https://arxiv.org/abs/0906.5177v2}
 }
 
+@Article{friedl2quick,
+  Title                    = {A quick proof that $K\#-K$ is doubly slice},
+  Author                   = {Friedl, Stefan and Orson, Patrick},
+
+  Url                      = {http://www.mathematik.uni-regensburg.de/friedl/papers/doublyslice-august-21-2013.pdf}
+}
+
+@InProceedings{friedl2015twist,
+  Title                    = {Twist spinning of knots and metabolizers of Blanchfield pairings},
+  Author                   = {Friedl, Stefan and Orson, Patrick},
+  Booktitle                = {Annales de la Facult{\'e} des sciences de Toulouse: Math{\'e}matiques},
+  Year                     = {2015},
+  Number                   = {5},
+  Pages                    = {1203--1218},
+  Volume                   = {24}
+}
+
 @Article{gay2016trisecting,
   Title                    = {Trisecting 4--manifolds},
   Author                   = {Gay, David and Kirby, Robion},
@@ -240,7 +257,7 @@ Author: {(https://mathoverflow.net/users/1400/kelly-davis)}},
 
 @InProceedings{kirby1995problems,
   Title                    = {Problems in low-dimensional topology},
-  Author                   = {Kirby, Rob and Kirby, Edited Rob},
+  Author                   = {Kirby, Rob},
   Booktitle                = {Proceedings of Georgia Topology Conference, Part 2},
   Year                     = {1995},
   Organization             = {Citeseer},
@@ -428,6 +445,17 @@ Author: {(https://mathoverflow.net/users/1400/kelly-davis)}},
   Year                     = {2006},
 
   Url                      = {https://arxiv.org/abs/math/0606464}
+}
+
+@Article{zeeman1965twisting,
+  Title                    = {Twisting spun knots},
+  Author                   = {Zeeman, E Christopher},
+  Journal                  = {Transactions of the American Mathematical Society},
+  Year                     = {1965},
+  Pages                    = {471--495},
+  Volume                   = {115},
+
+  Publisher                = {JSTOR}
 }
 
 @Misc{SCP4,
