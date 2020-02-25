@@ -61,9 +61,6 @@
 
 \newcommand{\blankpage}{\newpage\hbox{}\thispagestyle{empty}\newpage} % Command to insert a blank page
 
-\usepackage{makeidx} % Used to generate the index
-\makeindex % Generate the index which is printed at the end of the document
-
 %----------------------------------------------------------------------------------------
 %	BOOK META-INFORMATION
 %----------------------------------------------------------------------------------------
@@ -89,8 +86,8 @@
 
 \usepackage{enumitem}
 
-\usepackage{imakeidx}
-\makeindex[columns=2]
+\usepackage{imakeidx} % Used to generate the index
+\makeindex[columns=2] % Generate the index which is printed at the end of the document
 
 % % % % % % % % % % % % % % %
 %% Environment definitions
@@ -167,7 +164,7 @@
 % Command \C is already defined
 % Command \H is already defined
 
-
+\usepackage{todonotes}
 
 %----------------------------------------------------------------------------------------
 
@@ -200,7 +197,7 @@
 \section*{Introduction}
 
 These notes are a collection of various topics
-that I wanted to write down and use as a reference.
+for me as a reference.
 
 %----------------------------------------------------------------------------------------
 
